@@ -1,0 +1,519 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1256">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>مميزات سكربت التاريخ الهجري HejriDate 1</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	direction:rtl;
+	unicode-bidi:embed;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+code
+	{font-family:"Courier New";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1 dir=RTL>
+
+<p class=MsoNormal dir=RTL><b><span lang=AR-SA style='font-size:18.0pt;
+font-family:Arial;color:red'>مميزات سكربت التاريخ الهجري</span></b><span
+dir=LTR></span><b><span dir=LTR style='font-size:18.0pt;font-family:Arial;
+color:red'><span dir=LTR></span> HejriDate 1.0</span></b><span dir=LTR
+style='font-size:18.0pt;font-family:Tahoma;color:red'> </span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يستعرض</span><span
+dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'><span dir=LTR></span> </span><span lang=AR-SA
+style='font-size:13.5pt;font-family:Arial;color:#313031'>التاريخ الهجري من
+متغير التاريخ</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> Unix timestmp </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>وكذلك يقوم
+بتعريب التاريخ</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>الميلادي</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>.<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يستعرض
+التاريخ الهجري باللغة الإنجليزية</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>.<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يحول
+التاريخ الهجري غلى</span><span dir=LTR></span><span dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> unix timestamp </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>مما يمكن
+بعد ذلك تخزينه في قواعد البيانات أو معاملته بدوال</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+php </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>التي تتعامل مع التاريخ</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>.<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يعتمد
+التقويم الهجري الاصطلاحي الذي اعتمده الفلكيون</span><span dir=LTR></span><span
+lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span
+dir=LTR></span> </span><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>القدامى، ويعتمد الكبس في السنة 15 لا 16</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>.<br>
+<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>ملف
+السكربت هو</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> hejridate.php </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يجب</span><span
+dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'><span dir=LTR></span> </span><span lang=AR-SA
+style='font-size:13.5pt;font-family:Arial;color:#313031'>تضمين الملف في الصفحة
+المراد تشغيل دوال السكربت فيها</span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>مثلاً</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>
+PHP:</span></p>
+
+<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:7.5pt;margin-bottom:
+0cm;margin-left:7.5pt;margin-bottom:.0001pt;text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+"Courier New";color:#007700'>include&nbsp;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#DD0000'>&quot;hejridate.php&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'>;&nbsp; </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>دوال</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>السكربت</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:<br>
+</span><b><span dir=LTR style='font-size:13.5pt;font-family:Arial;color:red'>1-
+</span></b><b><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:red'>الدالة</span></b><span dir=LTR></span><b><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:red'><span dir=LTR></span>
+adate</span></b><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>تعمل
+نفس عمل الدالة</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> date </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>في لغة</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span> php </span><span dir=RTL></span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'><span
+dir=RTL></span>، راجع</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><a
+href="http://www.php.net/manual/en/function.date.php" target="_blank">,<span
+lang=AR-SA dir=RTL style='font-size:12.0pt'>وثائق عمل الدالة</span><span
+dir=LTR></span><span dir=LTR></span> date <span lang=AR-SA dir=RTL
+style='font-size:12.0pt'>في موقع</span><span dir=LTR></span><span dir=LTR></span>
+php</a><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>مع
+الاختلافات</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>التالية</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:<br>
+1- </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>تم إضافة أحرف تنسيق خاصة بعرض التاريخ الهجري وهي</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>: </span></p>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>_j </span><span lang=AR-SA style='font-size:13.5pt;
+font-family:Arial;color:#313031'>اليوم بدون أصفار دليلية (1-30</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>)<br>
+_d </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>يوم مع أصفار دليلية</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>(
+01-30)<br>
+_z </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>رقم اليوم في السنة بداية من الصفر (0-354</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+_M,_F </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>اسم الشهر (محرم،</span><span dir=LTR></span><span lang=AR-SA
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>صفر،</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>..)<br>
+_m </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>رقم الشهر مع أصفار دليلية (01-12</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+_n </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>رقم الشهر بدون أصفار</span><span dir=LTR></span><span
+lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span
+dir=LTR></span> </span><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>دليلية (1-12</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+_t </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>عدد الأيام في الشهر (29-30</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+_L </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>السنة كبيسة أم لا،</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+1=</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>كبيسة،
+0=ليست كبيسة</span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><br>
+_Y </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>السنة رقم كامل (1430</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+_y </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>السنة من رقمين</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+(30)</span></p>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>2- </span><span lang=AR-SA style='font-size:13.5pt;
+font-family:Arial;color:#313031'>تم تحوير عمل أحرف التنسيق التالية الخاصة بعرض
+التاريخ</span><span dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>الميلادي
+ليتم العرض باللغة العربية</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>:
+</span></p>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>l,D </span><span lang=AR-SA style='font-size:13.5pt;
+font-family:Arial;color:#313031'>اسم يوم الإسبوع</span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><br>
+F </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>اسماء
+الأشهر السريانية (كانون،</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>شباط</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>...)<br>
+M </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>اسماء
+الأشهر (تسمية إنجليزية)يناير ، فبراير</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>...)<br>
+a ,A </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>صباحا</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>ومساء للوقت</span><span
+dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'><span dir=LTR></span> </span></p>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>3- </span><span lang=AR-SA style='font-size:13.5pt;
+font-family:Arial;color:#313031'>التنسيق الافتراضي هو</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+'_j _M _Y</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>هـ' فيظهر بشكل( 5</span><span dir=LTR></span><span lang=AR-SA
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>جمادى
+الأولى 1430هـ</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span>)<br>
+4- </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>التاريخ الافتراضي هو تاريخ اليوم</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>.<br>
+<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>مثال</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>
+PHP:</span></p>
+
+<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:7.5pt;margin-bottom:
+0cm;margin-left:7.5pt;margin-bottom:.0001pt;text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+"Courier New";color:#0000BB'>adate</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#007700'>(</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#DD0000'>&quot;_j&nbsp;_M&nbsp;_Y</span><span
+lang=AR-SA dir=RTL style='font-family:"Courier New";color:#DD0000'>هـ&nbsp;الموافق</span><span
+dir=LTR></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#DD0000'><span dir=LTR></span>&nbsp;j&nbsp;M&nbsp;(F)&nbsp;Y</span><span
+lang=AR-SA dir=RTL style='font-family:"Courier New";color:#DD0000'>م</span><span
+dir=LTR></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#DD0000'><span dir=LTR></span>&quot;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#007700'>);&nbsp; </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>يعرض</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>النص التالي</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:<br>
+3 </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>جمادى
+الأولى 1430هـ الموافق 28 أبريل(نيسان) 2009 م</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span> <br>
+================================<br>
+</span><b><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:red'>الدالة</span></b><span dir=LTR></span><b><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:red'><span dir=LTR></span> </span></b><b><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:red'>الثانية</span></b><span
+dir=LTR></span><b><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:red'><span dir=LTR></span>:edate</span></b><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>تعمل
+نفس عمل الدالة</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> date </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>في لغة</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span> php </span><span dir=RTL></span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'><span
+dir=RTL></span>، راجع</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><a
+href="http://www.php.net/manual/en/function.date.php" target="_blank">,<span
+lang=AR-SA dir=RTL style='font-size:12.0pt'>وثائق عمل</span><span dir=LTR></span><span
+lang=AR-SA><span dir=LTR></span> </span><span lang=AR-SA dir=RTL
+style='font-size:12.0pt'>الدالة</span><span dir=LTR></span><span dir=LTR></span>
+date <span lang=AR-SA dir=RTL style='font-size:12.0pt'>في موقع</span><span
+dir=LTR></span><span dir=LTR></span> php</a></span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>:</span></p>
+
+<div style='border:inset 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;background:#F7F7F7'>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>do same of (date) but
+if can view hejri date</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>***********hejridate
+format letters </span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                    _j
+Day of the month without leading zeros</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                    _d
+Day of the month, 2 digits with leading zeros</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _z
+The day of the year (starting from 0)</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _M,
+_F A full textual representation of a month, such as Ramadan</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _m 
+Numeric representation of a month, with leading zeros</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _n
+Numeric representation of a month, without leading zeros</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _t
+Number of days in the given month</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _L
+Whether it's a leap year, 1 if it is a leap year, 0 otherwise</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _Y
+A full numeric representation of a year, 4 digits</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>                     _y
+A two digit representation of a year</span></p>
+
+</div>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>EXample:</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>
+PHP:</span></p>
+
+<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:7.5pt;margin-bottom:
+0cm;margin-left:7.5pt;margin-bottom:.0001pt;text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+"Courier New";color:#0000BB'>edate</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#007700'>(</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#DD0000'>&quot;_j&nbsp;_M&nbsp;_Y&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'>);&nbsp; </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>shows:</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>:</span></p>
+
+<div style='border:inset 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;background:#F7F7F7'>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>3 jumada al Oula 1430</span></p>
+
+</div>
+
+<p class=MsoNormal dir=RTL><span dir=LTR style='font-size:13.5pt;font-family:
+Arial;color:#313031'>===================================<br>
+</span><b><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:red'>الدالة الثالثة</span></b><span dir=LTR></span><b><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:red'><span dir=LTR></span>:hejri2time</span></b><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'> <br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يحول
+التاريخ الهجري إلى</span><span dir=LTR></span><span dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> timestamp<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يكون
+التاريخ المدخل بترتيب اليوم ثم الشهر ثم السنة</span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يمكن
+استخدام</span><span dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>الرموز
+التالية في الفصل بين أجزاء التاريخ</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+- / \ .</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>:</span></p>
+
+<div style='border:inset 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;background:#F7F7F7'>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>Convert text Hejridate
+to Unix timestamp</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>the hejri date must be
+in order d m y</span></p>
+
+<p class=MsoNormal dir=LTR style='text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed;border:none;padding:0cm'><span
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'>you can use these
+seprators between date parts   - / \ .</span></p>
+
+</div>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>والفائدة</span><span dir=LTR></span><span lang=AR-SA
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>منها
+أنك تستطيع بعد تحويل التاريخ الهجري إلى</span><span dir=LTR></span><span
+dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+timestamp </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>تخزينه في قاعدة بيانات أو</span><span dir=LTR></span><span
+lang=AR-SA dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><span
+dir=LTR></span> </span><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>إجراء عمل دوال</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>
+php </span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;
+color:#313031'>الخاصة بالتاريخ فيه</span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>مثال</span><span
+dir=LTR></span><span dir=LTR style='font-size:13.5pt;font-family:Arial;
+color:#313031'><span dir=LTR></span>:</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:8.0pt;font-family:
+Tahoma;color:#313031'>كود</span><span dir=LTR></span><span dir=LTR
+style='font-size:8.0pt;font-family:Tahoma;color:#313031'><span dir=LTR></span>
+PHP:</span></p>
+
+<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:7.5pt;margin-bottom:
+0cm;margin-left:7.5pt;margin-bottom:.0001pt;text-align:left;background:#F7F7F7;
+direction:ltr;unicode-bidi:embed'><span style='font-size:10.0pt;font-family:
+"Courier New";color:#0000BB'>hejri2time</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#007700'>(</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#DD0000'>&quot;29-1-1430&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'>);&nbsp; </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#007700'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA style='font-size:13.5pt;font-family:
+Arial;color:#313031'>يحول</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>يوم 29 محرم
+1430 إلى متغير</span><span dir=LTR></span><span dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> timestamp<br>
+<br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>برمجة:
+أبي الحارث الحاسوبي، مشرف</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>موقع صفحات
+العلامة مقبل بن هادي الوادعي رحمه الله</span><span dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>الإصدار:
+1.0</span><span dir=LTR style='font-size:13.5pt;font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>سيتم
+الرد</span><span dir=LTR></span><span lang=AR-SA dir=LTR style='font-size:13.5pt;
+font-family:Arial;color:#313031'><span dir=LTR></span> </span><span lang=AR-SA
+style='font-size:13.5pt;font-family:Arial;color:#313031'>على الاستفسارات على
+هذه الصفحة إن أذن المشرفون على الشبكة</span><span dir=LTR style='font-size:
+13.5pt;font-family:Arial;color:#313031'><br>
+</span><span lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>لا
+تخفي اسم المبرمج</span><span dir=LTR></span><span lang=AR-SA dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span> </span><span
+lang=AR-SA style='font-size:13.5pt;font-family:Arial;color:#313031'>والحقوق حتى
+لا تكن متشبعًا بما لم تعطَ</span><span dir=LTR></span><span dir=LTR
+style='font-size:13.5pt;font-family:Arial;color:#313031'><span dir=LTR></span>.</span></p>
+
+<p class=MsoNormal dir=RTL><span lang=AR-SA>سترفع التحديثات الجديدة على موقع </span><a
+href="http://www.salafsoft.com/"><span dir=LTR>www.salafsoft.com</span></a><span
+dir=RTL></span><span dir=RTL></span> <span lang=AR-SA>بإذن الله.</span></p>
+
+</div>
+
+</body>
+
+</html>
